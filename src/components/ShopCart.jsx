@@ -1,6 +1,7 @@
-import { RiShoppingBasketFill } from 'react-icons/ri';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { RiShoppingCart2Line } from 'react-icons/ri';
+import { BsCartX } from 'react-icons/bs';
 import { useState } from 'react';
+import {VscChromeClose} from 'react-icons/vsc';
 
 export const ShopCart = ({ basketItems, removeItemFromBasket, image }) => {
 	const [open, setOpen] = useState(false);
@@ -23,7 +24,7 @@ export const ShopCart = ({ basketItems, removeItemFromBasket, image }) => {
 						setOpen(false);
 					}}
 					className="close-button">
-					<AiOutlineCloseCircle />
+					<VscChromeClose />
 				</button>
 				<h2>Shopping Basket</h2>
 
@@ -34,7 +35,7 @@ export const ShopCart = ({ basketItems, removeItemFromBasket, image }) => {
 						<h2>{item.name}</h2>
 						<p>£{item.price}</p>
 						<button className="remove">
-							<AiOutlineCloseCircle
+							<BsCartX
 								onClick={() => {
 									removeItemFromBasket(item);
 								}}
@@ -53,7 +54,7 @@ export const ShopCart = ({ basketItems, removeItemFromBasket, image }) => {
 				className="shop-button">
 				<ul>
 					<li>
-						<RiShoppingBasketFill />
+						<RiShoppingCart2Line />
 					</li>
 				</ul>
 			</button>

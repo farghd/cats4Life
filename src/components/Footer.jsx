@@ -1,9 +1,7 @@
 const Footer = () => {
 	return (
 		<div className="footer">
-			<span className="footer-1">Copyright @ </span>{' '}
-			<span className="footer-2">Cats4Lyf</span>
-			<span className="footer-3">2022</span>
+			<p> Copyright @ Purrfect Cats, 2022</p>
 		</div>
 	);
 };

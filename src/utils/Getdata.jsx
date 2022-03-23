@@ -12,7 +12,7 @@ const GetData = () => {
 		const city = faker.address.city();
 		const breed = faker.animal.cat();
 		const age = faker.datatype.number(20);
-		const price = faker.commerce.price(50, 1000);
+		const price = faker.commerce.price(50, 500);
 
 		arr.push({ name, gender, city, breed, age, price });
 		console.log(arr);

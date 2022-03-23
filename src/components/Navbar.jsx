@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = ({ basketItems, removeItemFromBasket }) => {
 	return (
 		<div className="nav">
-			<Link to="/">Cats4Lyf</Link>
+			<Link to="/">Purrfect Cats</Link>
 			<div className="nav-cart">
 				<ShopCart
 					basketItems={basketItems}

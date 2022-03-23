@@ -7,8 +7,8 @@ const Home = ({ catData, catImages, addToBasket }) => {
     <div className="home">
       <Hero
         image={heroImg}
-        title="Welcome"
-        subtitle="What Greater Gift than the love of a cat"
+        title="You Need A Cat!"
+        subtitle="Cats are cute and cuddly! Adopt Today!"
         to="/AboutUs"
         button="About Us"
       />

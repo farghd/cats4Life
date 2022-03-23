@@ -5,8 +5,8 @@ import GetImage from "./utils/GetImage";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
-import AboutMe from "./pages/AboutMe";
+//import AboutUs from "./pages/AboutUs";
+ import AboutMe from "./pages/AboutMe";
 
 const App = () => {
   const [basketItems, setBasketItems] = useState([]);
@@ -50,9 +50,9 @@ const App = () => {
             />
           </Route>
 
-          <Route path="/AboutUs">
+          {/* <Route path="/AboutUs">
             <AboutUs />
-          </Route>
+          </Route> */}
           <Route path="/AboutMe">
             {catData.length === 0 ? (
               <div className="loading"></div>

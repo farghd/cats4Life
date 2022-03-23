@@ -26,9 +26,9 @@ const Hero = ({
         <h4>{gender}</h4>
 
         <h2>{price}</h2>
-        <Link to={to} className="hero-button">
+        {/* <Link to={to} className="hero-button">
           <button onClick={onClick}>{button}</button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
