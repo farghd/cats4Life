@@ -20,6 +20,8 @@ const Home = ({ catData, catImages, addToBasket }) => {
             <Tile
               name={catData[i]?.name}
               price={catData[i]?.price}
+              age={catData[i]?.age}
+              breed={catData[i]?.breed}
               image={cat.url}
               key={cat.id}
               id={cat.id}
