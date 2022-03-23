@@ -26,7 +26,7 @@ export const ShopCart = ({ basketItems, removeItemFromBasket, image }) => {
 					className="close-button">
 					<VscChromeClose />
 				</button>
-				<h2>Shopping Basket</h2>
+				<h2>Your Cart</h2>
 
 				{basketItems.map((item) => (
 					<div className="container">
