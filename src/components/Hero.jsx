@@ -1,12 +1,7 @@
-// import { Link } from "react-router-dom";
-
 const Hero = ({
   image,
   title,
   subtitle,
-  to,
-  button,
-  onClick,
   price,
   breed,
   age,
@@ -24,11 +19,7 @@ const Hero = ({
         <h4>{age}</h4>
         <h4>{city}</h4>
         <h4>{gender}</h4>
-
         <h2>{price}</h2>
-        {/* <Link to={to} className="hero-button">
-          <button onClick={onClick}>{button}</button>
-        </Link> */}
       </div>
     </div>
   );

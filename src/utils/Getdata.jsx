@@ -3,18 +3,18 @@ import faker from 'faker';
 const GetData = () => {
 	const arr = [];
 
-	for (let i = 0; i < 20; i++) {
-		const genders = ['male', 'female'];
+	for (let i = 0; i < 6; i++) {
+		const genders = ['Male', 'Female'];
 		const gender = faker.random.arrayElement(genders);
-
 		const name = faker.name.firstName(gender);
-
 		const city = faker.address.city();
 		const breed = faker.animal.cat();
-		const age = faker.datatype.number(20);
-		const price = faker.commerce.price(50, 500);
+		const age = faker.datatype.number(24);
+		const price = faker.commerce.price(50, 350);
+		const pedigrees = ['Yes', 'No', 'Unknown'];
+		const pedigree = faker.random.arrayElement(pedigrees);
 
-		arr.push({ name, gender, city, breed, age, price });
+		arr.push({ name, gender, city, breed, age, price, pedigree });
 		console.log(arr);
 	}
 

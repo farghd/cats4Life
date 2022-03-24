@@ -5,8 +5,7 @@ import GetImage from "./utils/GetImage";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-//import AboutUs from "./pages/AboutUs";
- import AboutMe from "./pages/AboutMe";
+
 
 const App = () => {
   const [basketItems, setBasketItems] = useState([]);
@@ -48,30 +47,6 @@ const App = () => {
               catImages={catImages}
               addToBasket={addToBasket}
             />
-          </Route>
-
-          {/* <Route path="/AboutUs">
-            <AboutUs />
-          </Route> */}
-          <Route path="/AboutMe">
-            {catData.length === 0 ? (
-              <div className="loading"></div>
-            ) : (
-              catImages.map((cat, i) => (
-                <AboutMe
-                  name={catData[i]?.name}
-                  price={catData[i]?.price}
-                  image={cat.url}
-                  key={cat.id}
-                  id={cat.id}
-                  addToBasket={addToBasket}
-                  breed={catData[i]?.breed}
-                  gender={catData[i]?.gender}
-                  age={catData[i]?.age}
-                  city={catData[i]?.city}
-                />
-              ))
-            )}
           </Route>
         </Switch>
 
