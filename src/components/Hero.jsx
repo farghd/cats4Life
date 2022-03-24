@@ -10,8 +10,6 @@ const Hero = ({
 }) => {
   return (
     <div className="hero">
-      <img src={image} alt="" />
-
       <div className="hero-side">
         <h3>{title}</h3>
         <h2>{subtitle}</h2>
@@ -21,6 +19,7 @@ const Hero = ({
         <h4>{gender}</h4>
         <h2>{price}</h2>
       </div>
+           <img src={image} alt="" />
     </div>
   );
 };

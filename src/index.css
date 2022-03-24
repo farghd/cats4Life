@@ -204,10 +204,6 @@ body {
   justify-content: center;
   width: 100%;
 }
-.hero-button {
-  display: flex;
-  justify-content: center;
-}
 
 .hero img {
   min-width: 20%;
@@ -257,6 +253,7 @@ body {
   margin: 30px 0 30px 0;
 }
 
+
 .tile {
   display:flex;
   padding: 20px 20px 20px 20px;
@@ -266,67 +263,86 @@ body {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   border-radius: 15px;
   width: 400px;
-  height:300px;
-  border: 3px red solid;
+  height: 200px;
+  z-index: 1;
+  
+}
+
+.tile-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  
+}
+.tile-left-side{
+
+  width:200px;
+  height:200px;  
+}
+
+
+.tile-left-side img {
+  width: 200px;
+  height: 200px;
+  /* object-fit:contain; */
+  border-radius: 10%;
+
+  margin-bottom: 0px;
+  z-index: 1;
+  position: absolute;
 
   
 }
 
-.tile img {
-  width: 200px;
-  height: 200px;
-  object-fit:cover;
-  border-radius: 10%;
-  border: solid 8px rgb(255, 204, 145);
-  margin-bottom: 14px;
-  z-index: 1;
-position: absolute;
-}
-
-
 .tile h4 {
-  margin: 0;
+  margin-right: 5px;
   font-size: 35px;
   font-weight: 600;
+  
 }
-
+/*
 .tile h5 {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
+  margin-left:5px;
 }
 
 .tile p {
   font-family: "Quicksand", sans-serif;
-  margin: 10px 0;
-}
+  /* margin-right: 10px; */
+/* }  */
 
 .tile button {
-  background-color: white;
-  border: solid 2px rgb(90, 11, 83);
-  margin-bottom: 14px;
-  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
   padding: 10px 10px 10px 10px;
   font-size: 15px;
   font-weight: 300;
   font-family: "Quicksand", sans-serif;
   border-radius: 5px;
   cursor: pointer;
-  width: 30%;
+  width:200px;
+  height:200px;
   z-index: 2;
-  position: relative;
+  position: relative; 
+  color: rgb(0, 0, 0, 0);
 }
 
-.tile :hover img {
+.tile-left-side :hover img {
   opacity: 0.3;
 }
 
-.tile :hover button {
+.tile-left-side :hover button {
   display: block;
 }
 .tile button:hover {
-  background-color: rgb(230, 149, 56);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.349);
+  color: rgb(255, 255, 255);
+  transition: ease 0.5s ;
+  font-size: 28px;
 }
 
 .footer {
@@ -390,18 +406,24 @@ position: absolute;
   height: 170px;
   object-fit:cover;
   border-radius: 10%;
-  border: solid 4px rgb(255, 204, 145);
+  border: solid 6px rgb(255, 204, 145);
 }
 
 .modal h2 {
-  text-align: center;
   font-size: 32px;
 }
 
 .modal h3 {
-  text-align: center;
   font-size: 32px;
   margin-bottom: 20px;
+}
+
+.modal h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 204, 145, 0.5);
+  padding: 30px 60px;
+  border-radius: 26px;
 }
 
 .modal--open {
@@ -418,10 +440,12 @@ position: absolute;
 
 .remove {
   background-color: transparent;
-  font-size: 25px;
+  font-size: 42px;
   border: none;
   cursor: pointer;
+  margin-top: 25px;
   margin-bottom: 25px;
+
 }
 
 .container {
@@ -433,15 +457,14 @@ position: absolute;
 
 .container-side {
   margin-left: 20px;
+
 }
 
 .container p {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  text-align: center;
   margin: 10px 0px 10px 0px;
-  display: flex;
 }
 
 .container img {

@@ -9,8 +9,6 @@ const Home = ({ catData, catImages, addToBasket }) => {
         image={heroImg}
         title="You Need A Cat!"
         subtitle="Our cats are cute and cuddly! Adopt one today!"
-        to="/AboutUs"
-        button="About Us"
       />
       <div className="gallery">
         {catData.length === 0 ? (
