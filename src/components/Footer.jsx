@@ -1,7 +1,13 @@
+import { AiFillFacebook, AiFillTwitterSquare, AiFillYoutube } from "react-icons/ai";
+
+
 const Footer = () => {
 	return (
 		<div className="footer">
-			<p>Copyright @ Purrfect Cats, 2022</p>
+            <AiFillFacebook className='facebookicon'></AiFillFacebook>
+            <AiFillTwitterSquare className='twittericon'></AiFillTwitterSquare>
+			<AiFillYoutube className='youtubeicon'></AiFillYoutube>
+			<p>Follow us</p>
 		</div>
 	);
 };

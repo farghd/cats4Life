@@ -1,27 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap');
 
+
+.first-color { 
+	background: #222831; 
+}
+	
+.second-color { 
+	background: #2d4059; 
+}
+
+.third-color { 
+	background: #ff5722; 
+}
+
+.fourth-color { 
+	background: #eeeeee; 
+}
+
+
 * {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
 }
 
 .home {
-  max-width: 80%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
+ 
 }
 
+
+
+
 body {
-  background-color: rgba(255, 255, 255, 0.835);
+  background-color: #2d4059;
 }
 .nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px;
-  background-color: white;
+  padding: 10px; color:"" ;
+  background-color: #ffffff;
   margin-bottom: 25px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -31,17 +53,19 @@ body {
 .menu { display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px rgba(99, 99, 99, 0.178) solid;
+  border-right: 2px rgba(0, 0, 0, 0.178) solid;
   height: 50px;
   width: 30px;
-
 }
+
 .hiddenmenu{
   display: none;
   font-size: 20px;
 }
+
 .showmenu{
   font-size: 20px;
+  color: #000000;
 }
  .menu:hover .showmenu,
  .menu:hover .hiddenmenu{
@@ -63,7 +87,6 @@ body {
    height: 80px;
    /* border: 5px black solid; */
    
-
  }
 .Logo{
   object-fit: contain;
@@ -142,7 +165,6 @@ body {
   /* border: 5px red solid; */
 }
 
-
 .shop-button {
   border: none;
   background-color: transparent;
@@ -151,99 +173,59 @@ body {
   padding-right: 30%;
 }
 
-/* .nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px;
-  background-color: rgb(255, 204, 145);
-  margin-bottom: 30px;
-  border-bottom-right-radius: 75px;
-  border-bottom-left-radius: 75px;
-
-}
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  font-size: 35px;
-  color: #828282;
-  
-}
-
-.nav a {
-  font-size: 50px;
-  font-weight: 400;
-  color: #757575;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-family: 'Delius Unicase', cursive;
-}
-
-.nav-cart {
-  position: absolute;
-  left: 80%;
-}
-
-.shop-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-} */
 
 .hero {
-  display: flex;
-  margin: 0;
-  background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  border-radius: 15px;
-  border: solid 8px rgb(255, 204, 145);
-  justify-content: center;
-  width: 100%;
+  /* display: flex; */
+  /* margin: 0; */
+  /* background-color: transparent; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, */
+    /* rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  /* border-radius: 15px; */
+  /* border: solid 8px rgb(255, 204, 145); */
+  /* justify-content: center; */
+  /* width: 50%; */
+  /* transform: skew(20deg); */
+  /* border-top-left-radius: 5%;
+  border-top-right-radius: 25%; */
+
+  /* border-bottom-left-radius: 10% black solid; */
+  margin-left: 680px;
 }
+
+.topbackground{
+  margin-top: -25px;
+  width: 100%;
+  height: 30%;
+  background-color: rgb(255, 255, 255);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 79% 48%, 64% 50%, 51% 54%, 38% 61%, 28% 68%, 16% 80%, 0 100%);
+    /* border-top: 300px solid white;
+    border-left: 0px solid transparent;
+    border-right:60px solid transparent;
+     width: 80%;
+    height: 20%; */
+  /* position: absolute; */
+  overflow: visible;
+}
+.hero 
 
 .hero img {
-  min-width: 20%;
-  min-height: 100%;
-  margin: 0;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
+  /* display: none; */
+  width: 100%;
+  /* height: 100%; */
+  
+  /* border-bottom-left-radius: 15px; */
+  /* border-top-left-radius: 5%;  */
+  /* border-bottom-right-radius: 30%; */
+/* transform: skew(0deg,15deg); */
   height: 450px;
-  object-fit: cover;
-  object-position: top;
+  margin-top: 100px;
+  
+  /* object-fit: contain; */
+  /* object-position: top; */
+  /* border: 2px rgb(255, 255, 255) solid; */
 }
-
-.hero-side {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero-side h3 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 200;
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.hero-side h2 {
-  font-weight: 300;
-  font-size: 40px;
-  letter-spacing: 1px;
-  margin: 5px 25px 5px 25px;
-  text-align: center;
-}
-
-.hero-side h4 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 200;
-  font-size: 25pxpx;
-  text-align: center;
-}
+/* 
+/*  */
 
 .gallery {
   display: flex;
@@ -257,7 +239,7 @@ body {
 .tile {
   display:flex;
   padding: 20px 20px 20px 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(205, 205, 208);
   margin: 10px 5px 10px 2px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -347,8 +329,8 @@ body {
 
 .footer {
   padding: 10px 60px;
-  background-color:rgb(221, 124, 14);
-  text-align: left;
+  background-color:#ff5722;
+  text-align: center;
   font-size: 18px;
   color: white ;
 }

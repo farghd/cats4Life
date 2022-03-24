@@ -1,16 +1,19 @@
 import Hero from "../components/Hero";
 import Tile from "../components/Tile";
-import heroImg from "../images/heroimg.png";
+import heroImg from "../images/hero.jpg";
 
 const Home = ({ catData, catImages, addToBasket }) => {
   return (
     <div className="home">
-      <Hero
-        image={heroImg}
-        title="You Need A Cat!"
-        subtitle="Our cats are cute and cuddly! Adopt one today!"
-      />
+      <div className="topbackground">
+      <Hero image={heroImg}
+        // title="You Need A Cat!"
+        // subtitle="Our cats are cute and cuddly! Adopt one today!"
+      /> 
+       </div>
+    
       <div className="gallery">
+    
         {catData.length === 0 ? (
           <div className="loading"></div>
         ) : (
