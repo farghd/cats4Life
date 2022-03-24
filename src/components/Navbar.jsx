@@ -24,7 +24,6 @@ import { RiMenu2Fill} from 'react-icons/ri';
 import catLogo from "../images/catlogo.png"
 import {MdOutlineContactSupport} from 'react-icons/md';
 import {MdOutlineStoreMallDirectory} from 'react-icons/md';
-import {VscAccount} from 'react-icons/vsc';
 import { ShopCart } from './ShopCart';
 import {RiAccountCircleFill} from 'react-icons/ri'
 
