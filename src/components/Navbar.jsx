@@ -26,7 +26,7 @@ const Navbar = ({ basketItems, removeItemFromBasket }) => {
             <MdOutlineStoreMallDirectory className='store'/>
             <RiAccountCircleFill className='account'></RiAccountCircleFill>
             <div className="nav-cart">
-                <ShopCart 
+                <ShopCart className="shopcartnav"
                     basketItems={basketItems}
                     removeItemFromBasket={removeItemFromBasket}
                 />

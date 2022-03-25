@@ -9,7 +9,7 @@ const GetData = () => {
 		const name = faker.name.firstName(gender);
 		const city = faker.address.city();
 		const breed = faker.animal.cat();
-		const age = faker.datatype.number(24);
+		const age = faker.datatype.number(1,20);
 		const price = faker.commerce.price(50, 350);
 		const pedigrees = ['Yes', 'No', 'Unknown'];
 		const pedigree = faker.random.arrayElement(pedigrees);

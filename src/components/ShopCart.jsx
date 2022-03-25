@@ -2,7 +2,7 @@ import { RiShoppingCartLine } from 'react-icons/ri';
 import { BsCartDashFill } from 'react-icons/bs';
 import { useState } from 'react';
 import {VscChromeClose} from 'react-icons/vsc';
-
+import { MdRemoveShoppingCart } from "react-icons/md";
 
 
 export const ShopCart = ({ basketItems, removeItemFromBasket, image }) => {
@@ -37,7 +37,7 @@ export const ShopCart = ({ basketItems, removeItemFromBasket, image }) => {
 						<h2>{item.name}</h2>
 						<p>£{item.price}</p>
 						<button className="remove">
-							<BsCartDashFill
+							<MdRemoveShoppingCart
 								onClick={() => {
 									removeItemFromBasket(item);
 								}}

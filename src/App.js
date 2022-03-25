@@ -21,12 +21,12 @@ const App = () => {
     })();
   }, []);
 
-  //add cat to basket
+
   const addToBasket = (item) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setBasketItems([...basketItems, item]);
   };
-  //remove cat from basket funtion using remaining cat id
+
   const removeItemFromBasket = (item) => {
     const remainingBasketItems = basketItems.filter(
       (cat) => cat.id !== item.id

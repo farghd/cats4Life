@@ -4,9 +4,10 @@ import { AiFillFacebook, AiFillTwitterSquare, AiFillYoutube } from "react-icons/
 const Footer = () => {
 	return (
 		<div className="footer">
-            <AiFillFacebook className='facebookicon'></AiFillFacebook>
-            <AiFillTwitterSquare className='twittericon'></AiFillTwitterSquare>
-			<AiFillYoutube className='youtubeicon'></AiFillYoutube>
+            <AiFillFacebook className='facebookicon'/>
+			<AiFillYoutube className='youtubeicon'/>
+            <AiFillTwitterSquare className='twittericon'/>
+			
 			<p>Follow us</p>
 		</div>
 	);
