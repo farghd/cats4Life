@@ -1,16 +1,18 @@
 import Hero from "../components/Hero";
 import Tile from "../components/Tile";
 import heroImg from "../images/hero.jpg";
+import {IoMdPaw} from 'react-icons/io';
 
 const Home = ({ catData, catImages, addToBasket }) => {
   return (
     <div className="home">
-      <div className="topbackground">
+      <div className="backgroundhero">
       <Hero image={heroImg}
-        // title="You Need A Cat!"
-        // subtitle="Our cats are cute and cuddly! Adopt one today!"
+ 
       /> 
-       </div>
+      <h1 className="HeroText">Take A Cat <br></br>Home Today!</h1> 
+      <IoMdPaw className="Paw"/>
+      </div>
     
       <div className="gallery">
     
@@ -34,6 +36,7 @@ const Home = ({ catData, catImages, addToBasket }) => {
           ))
         )}
       </div>
+      <div className="bottombackground"></div>
     </div>
   );
 };

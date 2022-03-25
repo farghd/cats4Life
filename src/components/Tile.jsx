@@ -1,3 +1,4 @@
+import { RiShoppingCart2Fill } from "react-icons/ri";
 
 
 const Tile = ({ image, name, age, pedigree, gender, breed, city, price, addToBasket, id }) => {
@@ -8,7 +9,7 @@ const Tile = ({ image, name, age, pedigree, gender, breed, city, price, addToBas
 		<div className="tile">
 			<div className="tile-left-side">
 				<img src={image} alt="" />
-				<button onClick={onClick}>Add to Cart</button>	
+				<button onClick={onClick}><RiShoppingCart2Fill className="tilebuttonicon"/></button>	
 				</div>
 			<div className="tile-side">
 				<h4>{name}</h4>
