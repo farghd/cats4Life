@@ -20,7 +20,7 @@ export const ShopCart = ({ basketItems, removeItemFromBasket, image }) => {
 					setOpen(false);
 				}}
 				className={`overlay ${open ? 'overlay--open' : ''}`}></div>
-			<div class={`modal ${open ? 'modal--open' : ''}`}>
+			<div className={`modal ${open ? 'modal--open' : ''}`}>
 				<button
 					onClick={() => {
 						setOpen(false);

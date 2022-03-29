@@ -41,7 +41,7 @@ const App = () => {
           removeItemFromBasket={removeItemFromBasket}
         />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/cats4Life">
             <Home
               catData={catData}
               catImages={catImages}
